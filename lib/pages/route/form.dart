@@ -1,0 +1,31 @@
+import 'package:flutter/material.dart';
+
+class FormPage extends StatefulWidget {
+  const FormPage({super.key});
+
+  @override
+  State<FormPage> createState() => _FormPageState();
+}
+
+class _FormPageState extends State<FormPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('表单页面')),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('表单页面'),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed('/search');
+              },
+              child: Text('跳转到搜索页面'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
