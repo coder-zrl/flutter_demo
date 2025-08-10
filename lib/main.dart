@@ -1,7 +1,7 @@
 // importM
 import 'package:flutter/material.dart';
 
-import './pages/tabs.dart';
+import './data/flutter12_drawer.dart';
 
 void main() {
   runApp(
